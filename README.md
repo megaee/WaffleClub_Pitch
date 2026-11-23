@@ -41,7 +41,7 @@ See [`docs/TRACEABILITY.md`](docs/TRACEABILITY.md) for a slide-by-slide checklis
 
 ## Design
 
-Colours, fonts and imagery come from the deck: ink `#2B1A10`, caramel `#E39B2D`, berry `#B5452F`, sage `#3E7D5A`, cream `#F8EEDF`; **Agbalumo** for display text (used throughout the deck), **Cinzel Decorative** and **Cambria** for the title slide, plus Nunito Sans for long body copy and forms. Photos are the deck's Pexels images (free licence). The layout is responsive for desktop, tablet and mobile.
+Colours, fonts and imagery come from the deck: ink `#2B1A10`, caramel `#E39B2D`, berry `#B5452F`, sage `#3E7D5A`, cream `#F8EEDF`; **Agbalumo** for display text (used throughout the deck), **Cinzel Decorative** and **Cambria** for the title slide, plus Nunito Sans for long body copy and forms. Photos are the deck's Pexels images (free licence). Visual details were checked against the deck's PDF export, page by page. The layout is responsive for desktop, tablet and mobile.
 
 ## Run locally
 

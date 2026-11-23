@@ -381,3 +381,31 @@ dialog::backdrop { background: rgba(43, 26, 16, .55); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* ------------------------------------------------------------------ *
+ * Design alignment with the deck PDF (WaffleClub_Pitch.pptx.pdf)
+ * ------------------------------------------------------------------ */
+/* header pill is caramel with white text (slides 10, 12–15) */
+.site-header .header-cta { background: var(--caramel); color: #fff; }
+.site-header .header-cta:hover { background: #d18a1f; box-shadow: none; }
+/* header logo is the "WaffleClub" wordmark only */
+.site-header .logo img { display: none; }
+/* all copy shown in the mockups is set in Agbalumo */
+.media-card p, .opt-card .opt-sub, .opt-card .opt-extra, .trust, .sum-line, .sum-note,
+.faq summary, .msg, .bot-foot, .bot-chips button, .flow, .suggestion p, .card > p.muted, .empty-note { font-family: var(--display); }
+.media-card p { color: var(--ink-2); }
+.faq summary { font-weight: 400; font-size: 1.08rem; }
+/* trust line: muted ticks */
+.trust { color: var(--muted-text); }
+.trust li::before { content: "✓ "; color: var(--muted-text); font-weight: 400; }
+/* step numbers in ink */
+.step-num { color: var(--ink); }
+/* flavour labels are plain coloured text, not pills */
+.chips .chip { background: none; padding: 0; border-radius: 0; font-size: .95rem; color: var(--muted-text); }
+.chips .chip.vegan, .chips .chip.gluten-free { color: var(--sage); }
+.chips .chip.savoury { color: var(--berry); }
+.chips .chip.seasonal { color: var(--caramel-d); }
+.chips { gap: 4px 10px; }
+/* payment cards: name at the top, detail at the bottom (slide 14) */
+.pay-card { min-height: 104px; }
+.pay-card .opt-sub { margin-top: auto; }

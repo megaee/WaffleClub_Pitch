@@ -143,3 +143,8 @@
 .kpi-out.good { color: var(--sage); }
 .kpi-out.bad { color: var(--berry); }
 .north { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: space-between; }
+
+/* alignment with the deck PDF */
+.sm-node ul { background: none; padding: 16px 4px 0; font-family: var(--display); font-size: 1.02rem; }
+.slide-dark .dk-link { font-family: var(--body); text-decoration: underline; text-underline-offset: 3px; }
+.slide-dark .dk-meta { font-family: var(--body); }

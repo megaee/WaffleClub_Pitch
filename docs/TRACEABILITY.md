@@ -1,6 +1,6 @@
 # Slide-by-slide traceability
 
-Each requirement from `WaffleClub_Pitch.pptx` and where it is implemented. ✅ = implemented and tested in the browser (desktop 1366 px, tablet 768 px, mobile 375 px).
+Each requirement from `WaffleClub_Pitch.pptx` and where it is implemented. The text was checked against the PDF export (`WaffleClub_Pitch.pptx.pdf`, 17 pages): it is identical on every page. The shop's design follows the PDF rendering (caramel header button, wordmark logo, Agbalumo copy, plain flavour labels, highlighted Pause card). ✅ = implemented and tested in the browser (desktop 1366 px, tablet 768 px, mobile 375 px).
 
 ## Slide 1 · Title
 | Content | Where |
