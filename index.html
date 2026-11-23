@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WaffleClub · Your waffle iron for €1</title>
+<meta name="description" content="Smart waffle iron + batter subscription. Your waffle iron for €1. Fresh batter pouches every month. Scan, shake, bake: perfect waffles in four minutes.">
+<meta property="og:title" content="WaffleClub · Your waffle iron for €1">
+<meta property="og:description" content="A smart waffle iron for €1, plus a batter subscription.">
+<meta property="og:image" content="assets/img/berry-crush.jpg">
+<link rel="icon" type="image/png" href="assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="home" data-root="./">
+<div id="site-header"></div>
+
+<main id="main">
+  <!-- Slide 10: Home, first screen -->
+  <section class="wrap hero" aria-labelledby="heroTitle">
+    <div class="hero-copy">
+      <p class="banner" id="refBanner" hidden></p>
+      <p class="eyebrow">Smart waffle iron + batter subscription</p>
+      <h1 id="heroTitle">Your waffle iron for €1.</h1>
+      <p class="lead">Fresh batter pouches every month. Scan, shake, bake: perfect waffles in four minutes.</p>
+
+      <fieldset class="options has-tag" aria-label="Choose a plan">
+        <legend class="sr-only">Choose a plan</legend>
+        <label class="opt-card">
+          <input type="radio" name="homeplan" value="single">
+          <span class="opt-name">Single</span>
+          <span class="opt-price">€9.99</span>
+          <span class="opt-sub">4 pouches / month</span>
+        </label>
+        <label class="opt-card">
+          <input type="radio" name="homeplan" value="family" checked>
+          <span class="tag">Most popular</span>
+          <span class="opt-name">Family</span>
+          <span class="opt-price">€19.99</span>
+          <span class="opt-sub">10 pouches / month</span>
+        </label>
+        <label class="opt-card">
+          <input type="radio" name="homeplan" value="party">
+          <span class="opt-name">Party Box</span>
+          <span class="opt-price">€29</span>
+          <span class="opt-sub">one box, any time</span>
+        </label>
+      </fieldset>
+
+      <div class="cta-row">
+        <a class="btn btn-dark" id="startBtn" href="shop/?plan=family">Start my WaffleClub&nbsp;&nbsp;→</a>
+        <a class="text-link" href="gifts/">Give it as a gift</a>
+      </div>
+      <ul class="trust">
+        <li>Free delivery</li>
+        <li>Skip or pause anytime</li>
+        <li>PayPal · Apple Pay · Klarna</li>
+      </ul>
+    </div>
+    <figure class="hero-media">
+      <img src="assets/img/berry-crush.jpg" alt="Golden waffles with vanilla sauce, powdered sugar and fresh raspberries" width="1400" height="1050" fetchpriority="high">
+    </figure>
+  </section>
+
+  <!-- Slide 11: Home, scrolling down (waffleclub.de/#how-it-works) -->
+  <section class="wrap home-lower" id="how-it-works" aria-label="How it works, flavours and questions">
+    <div class="home-main">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <a class="text-link" href="how-it-works/">See all 4 steps</a>
+      </div>
+      <div class="grid grid-3">
+        <article class="media-card">
+          <div class="media"><img src="assets/img/step-scan.jpg" alt="A hand scanning a batter pouch with a phone" loading="lazy" width="900" height="601"></div>
+          <h3><span class="step-num">1</span> Scan the pouch</h3>
+          <p class="muted">The iron reads the QR code and sets heat and time</p>
+        </article>
+        <article class="media-card">
+          <div class="media"><img src="assets/img/step-shake.jpg" alt="Milk being poured into a glass" loading="lazy" width="600" height="900"></div>
+          <h3><span class="step-num">2</span> Add milk, shake</h3>
+          <p class="muted">Pre-portioned batter: no measuring, no mess</p>
+        </article>
+        <article class="media-card">
+          <div class="media"><img src="assets/img/step-bake.jpg" alt="Batter being spread on a hot waffle iron" loading="lazy" width="900" height="600"></div>
+          <h3><span class="step-num">3</span> Bake</h3>
+          <p class="muted">Golden, crispy waffles in four minutes</p>
+        </article>
+      </div>
+
+      <div class="section-head" style="margin-top:26px">
+        <h2>This month's flavours</h2>
+        <a class="text-link" href="flavours/">All 6 flavours</a>
+      </div>
+      <div class="grid grid-3">
+        <article class="media-card">
+          <div class="media"><img src="assets/img/classic-buttermilk.jpg" alt="Waffles with syrup being poured over them" loading="lazy" width="720" height="900"></div>
+          <h3>Classic Buttermilk</h3>
+          <div class="chips"><span class="chip">in every plan</span></div>
+        </article>
+        <article class="media-card">
+          <div class="media"><img src="assets/img/berry-crush.jpg" alt="Waffles with raspberries and vanilla sauce" loading="lazy" width="1400" height="1050"></div>
+          <h3>Berry Crush</h3>
+          <div class="chips"><span class="chip vegan">vegan</span></div>
+        </article>
+        <article class="media-card">
+          <div class="media"><img src="assets/img/strawberry-sunday.jpg" alt="Hands breaking a waffle over a bowl with a strawberry" loading="lazy" width="1000" height="667"></div>
+          <h3>Strawberry Sunday</h3>
+          <div class="chips"><span class="chip gluten-free">gluten-free</span></div>
+        </article>
+      </div>
+    </div>
+
+    <aside aria-label="Frequently asked and WaffleBot">
+      <div class="faq-box">
+        <p class="eyebrow">Frequently asked</p>
+        <div class="faq">
+          <details>
+            <summary>Can I skip or cancel anytime?</summary>
+            <p>Yes. Skip your next box with 1 click, pause for 1–3 months at no cost, or cancel at the end of any month in My WaffleClub. You keep the iron.</p>
+          </details>
+          <details>
+            <summary>What if I go on holiday?</summary>
+            <p>Pause your plan for 1–3 months at no cost, or skip your next box. Pouches keep for 6 months unopened.</p>
+          </details>
+          <details>
+            <summary>Is there a vegan option?</summary>
+            <p>Yes. Flavours rotate every month, including vegan, gluten-free and savoury options. Berry Crush and Oat &amp; Cinnamon are vegan. <a href="flavours/?filter=vegan">See vegan flavours</a>.</p>
+          </details>
+          <details>
+            <summary>Can I give it as a gift?</summary>
+            <p>Yes. Gift boxes for 1, 3 or 6 months, gift-wrapped with a card and delivered on your date. You pay once, no subscription for you. <a href="gifts/">Gift boxes</a>.</p>
+          </details>
+        </div>
+      </div>
+      <div id="homeBot"></div>
+    </aside>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A gift for you · WaffleClub</title>
+<meta name="description" content="What a gift recipient sees after scanning the QR code: a greeting from the giver and the offer to continue with their own plan.">
+<link rel="icon" type="image/png" href="../../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../../assets/css/styles.css">
+<script src="../../assets/js/app.js" defer></script>
+</head>
+<body data-page="redeem" data-nav="gifts" data-root="../../">
+<div id="site-header"></div>
+
+<main id="main" class="wrap page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a> / <a href="../">Gifts</a> / Greeting</nav>
+  <p class="notice" id="rDemo" style="margin-bottom:22px">Preview: this is what the person who receives the gift sees in the app after scanning the QR code on the first pouch.</p>
+  <div class="split">
+    <section class="stack" style="gap:18px" aria-labelledby="rHead">
+      <p class="eyebrow" id="rTo">Hi!</p>
+      <h1 id="rHead">A gift from <span id="rFrom">Tom</span></h1>
+      <p class="lead" id="rBox">3-month gift box · Gingerbread</p>
+      <div class="card" id="rMsgWrap" hidden><p class="display" style="font-size:1.25rem" id="rMsg"></p></div>
+      <div class="card white">
+        <h2 style="font-size:1.5rem">Let's bake</h2>
+        <ol style="margin:0;padding-left:20px;color:var(--ink-2)">
+          <li>Scan the pouch: the iron reads the QR code and sets heat and time.</li>
+          <li>Add milk, shake the pouch.</li>
+          <li>Bake: golden, crispy waffles in four minutes.</li>
+        </ol>
+      </div>
+    </section>
+    <aside class="summary" aria-labelledby="ownTitle">
+      <p class="eyebrow">After your gift</p>
+      <h2 id="ownTitle">Your own plan, first month 50% off</h2>
+      <p class="muted">When your gift months are over, keep the waffles coming. You keep the iron.</p>
+      <div class="sum-line"><span>Single · 4 pouches / month</span><span class="tab">€9.99</span></div>
+      <div class="sum-line"><span>Family · 10 pouches / month</span><span class="tab">€19.99</span></div>
+      <a class="btn btn-dark btn-block" href="../../shop/?offer=gift50">Start my own plan</a>
+      <p class="sum-note">Skip, pause or cancel in your account.</p>
+    </aside>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

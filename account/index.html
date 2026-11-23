@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My WaffleClub · Account</title>
+<meta name="description" content="My WaffleClub: skip or pause a box, change plan, invite friends, orders and invoices.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="account" data-root="../">
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="wrap hero" aria-labelledby="acHello">
+    <div class="hero-copy">
+      <p class="eyebrow" id="acStatus">My WaffleClub · Family plan · Active</p>
+      <h1 id="acHello">Hi Lisa!</h1>
+      <p class="lead" id="acNext" aria-live="polite">Next box: Fri, 4 Dec. Classic Buttermilk, Berry Crush and Gingerbread.</p>
+      <div class="row-wrap"><span class="status-pill active" id="acPill">Active</span><button class="text-link" type="button" id="flavourBtn" style="font-size:1rem">Change flavours</button></div>
+
+      <div class="options acct-actions" role="group" aria-label="Manage your plan">
+        <button class="opt-card primary" type="button" id="skipCard">
+          <span class="opt-name">Skip next box</span>
+          <span class="opt-price">1 click</span>
+          <span class="opt-sub" id="skipSub">moves to 1 Jan</span>
+        </button>
+        <button class="opt-card" type="button" id="pauseCard">
+          <span class="opt-name" id="pauseName">Pause plan</span>
+          <span class="opt-price" id="pausePrice">1–3 months</span>
+          <span class="opt-sub" id="pauseSub">no cost</span>
+        </button>
+        <button class="opt-card" type="button" id="changeCard">
+          <span class="opt-name">Change plan</span>
+          <span class="opt-price">anytime</span>
+          <span class="opt-sub" id="changeSub">Single ↔ Family</span>
+        </button>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn btn-dark" type="button" id="inviteBtn">Invite friends  ·  you both get €5</button>
+        <button class="text-link" type="button" id="cancelBtn">Cancel plan</button>
+      </div>
+      <ul class="trust">
+        <li>Cancel at the end of any month</li>
+        <li>You keep the iron</li>
+        <li><a href="#orders">Orders &amp; invoices</a></li>
+      </ul>
+    </div>
+    <figure class="hero-media"><img src="../assets/img/family.jpg" alt="A family making breakfast together in the kitchen" width="1400" height="934"></figure>
+  </section>
+
+  <section class="wrap" style="padding-bottom:20px">
+    <div class="suggestion" role="note" aria-label="WaffleBot suggestion">
+      <span class="s-label">WaffleBot suggests</span>
+      <p>A birthday or event coming up? Add a Party Box: 12 pouches in all 6 flavours, €29, one box, any time.</p>
+      <button class="btn btn-caramel btn-sm" type="button" id="partySuggest">Add Party Box</button>
+    </div>
+  </section>
+
+  <section class="wrap section" id="orders" aria-labelledby="ordersTitle" style="scroll-margin-top:100px;padding-top:30px">
+    <h2 id="ordersTitle">Orders &amp; invoices</h2>
+    <div class="table-wrap" style="margin-top:14px">
+      <table>
+        <thead><tr><th scope="col">Date</th><th scope="col">Order</th><th scope="col">Items</th><th scope="col" class="num">Total</th><th scope="col">Status</th></tr></thead>
+        <tbody id="ordersBody"></tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:16px"><span id="demoNote">This is the example account from our pitch (Lisa, Family plan). Place an order to see your own. · </span><button class="btn-danger-link" style="color:var(--muted-text)" type="button" id="resetDemo">Reset demo account</button></p>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · WaffleClub</title>
+<meta name="description" content="WaffleClub checkout: address, payment, done.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="checkout" data-root="../">
+<div id="site-header"></div>
+
+<main id="main" class="wrap page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> / <a href="../cart/">Cart</a> / Checkout</nav>
+  <p class="flow" aria-label="Order steps" style="justify-content:flex-start;margin-bottom:16px"><span class="done">Cart ✓</span> → <span class="on">Checkout</span> → <span>Order confirmation</span> → <span>My account</span></p>
+
+  <div id="checkoutView">
+    <div class="split">
+      <form id="checkoutForm" class="stack" style="gap:26px" novalidate>
+        <div class="stack" style="gap:12px">
+          <h1>Checkout</h1>
+          <p class="lead">Delivery to: <span id="deliverTo">your address below</span>. Choose your payment method:</p>
+        </div>
+
+        <fieldset class="options has-tag">
+          <legend class="sr-only">Payment method</legend>
+          <label class="opt-card pay-card">
+            <input type="radio" name="pay" value="klarna">
+            <span class="opt-name">Klarna</span>
+            <span class="opt-sub">pay later</span>
+          </label>
+          <label class="opt-card pay-card">
+            <input type="radio" name="pay" value="paypal" checked>
+            <span class="opt-name">PayPal</span>
+            <span class="opt-sub">1 click</span>
+          </label>
+          <label class="opt-card pay-card">
+            <input type="radio" name="pay" value="applepay">
+            <span class="opt-name">Apple Pay</span>
+            <span class="opt-sub">Face ID</span>
+          </label>
+        </fieldset>
+
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="legend">Delivery address</legend>
+          <div class="form-grid">
+            <div class="field"><label for="coFirst">First name</label><input type="text" id="coFirst" autocomplete="given-name" maxlength="40" required></div>
+            <div class="field"><label for="coLast">Last name</label><input type="text" id="coLast" autocomplete="family-name" maxlength="40" required></div>
+            <div class="field span-2"><label for="coEmail">Email</label><input type="email" id="coEmail" autocomplete="email" maxlength="100" required><span class="hint">For your order confirmation.</span></div>
+            <div class="field span-2"><label for="coStreet">Street and number</label><input type="text" id="coStreet" autocomplete="address-line1" maxlength="80" required></div>
+            <div class="field"><label for="coZip">Postcode</label><input type="text" id="coZip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></div>
+            <div class="field"><label for="coCity">City</label><input type="text" id="coCity" autocomplete="address-level2" maxlength="60" required></div>
+            <div class="field span-2"><label for="coCountry">Country</label><input type="text" id="coCountry" value="Germany" readonly></div>
+          </div>
+          <button class="text-link" type="button" id="demoFill" style="font-size:1rem;margin-top:12px">Fill in the example address (Lisa M., Dortmund)</button>
+        </fieldset>
+
+        <p class="form-error-summary" id="formErrors" role="alert" hidden>Please check the highlighted fields.</p>
+        <p class="status-line">Secure SSL checkout  ·  14-day right of withdrawal</p>
+        <p class="notice">Prototype: no data is sent and nothing is charged.</p>
+      </form>
+
+      <aside class="summary" aria-labelledby="osTitle">
+        <h2 id="osTitle">Order summary</h2>
+        <div id="sumLines" class="stack" style="gap:10px"></div>
+        <p class="sum-note" id="sumNote"></p>
+        <button class="btn btn-dark btn-block" type="submit" form="checkoutForm" id="placeBtn">Place order  ·  €20.99</button>
+        <a class="text-link" href="../cart/" style="text-align:center;font-size:1rem">Edit cart</a>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

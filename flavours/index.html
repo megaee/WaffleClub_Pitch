@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flavours · WaffleClub</title>
+<meta name="description" content="6 WaffleClub batter flavours. Filter by vegan, gluten-free and savoury.">
+<link rel="icon" type="image/png" href="../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="flavours" data-root="../">
+<div id="site-header"></div>
+
+<main id="main" class="wrap page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> / Flavours</nav>
+  <div class="section-head" style="margin-bottom:26px">
+    <div class="stack" style="gap:10px">
+      <h1>Flavours</h1>
+      <p class="lead">6 flavours. They rotate every month, including vegan, gluten-free and savoury options.</p>
+    </div>
+    <div class="stack" style="gap:8px;align-items:flex-end">
+      <div class="filters" role="group" aria-label="Filter flavours">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="vegan" aria-pressed="false">vegan</button>
+        <button type="button" data-filter="gluten-free" aria-pressed="false">gluten-free</button>
+        <button type="button" data-filter="savoury" aria-pressed="false">savoury</button>
+      </div>
+      <p class="small muted" id="flavourCount" aria-live="polite">6 flavours</p>
+    </div>
+  </div>
+
+  <div class="grid grid-3">
+    <article class="media-card" data-tags="classic">
+      <div class="media"><img src="../assets/img/classic-buttermilk.jpg" alt="Waffles with syrup" loading="lazy" width="720" height="900"></div>
+      <h3>Classic Buttermilk</h3>
+      <div class="chips"><span class="chip">in every plan</span></div>
+    </article>
+    <article class="media-card" data-tags="vegan">
+      <div class="media"><img src="../assets/img/berry-crush.jpg" alt="Waffles with raspberries" loading="lazy" width="1400" height="1050"></div>
+      <h3>Berry Crush</h3>
+      <div class="chips"><span class="chip vegan">vegan</span></div>
+    </article>
+    <article class="media-card" data-tags="gluten-free">
+      <div class="media"><img src="../assets/img/strawberry-sunday.jpg" alt="Waffle with a strawberry" loading="lazy" width="1000" height="667"></div>
+      <h3>Strawberry Sunday</h3>
+      <div class="chips"><span class="chip gluten-free">gluten-free</span></div>
+    </article>
+    <article class="media-card" data-tags="vegan gluten-free">
+      <div class="media"><div class="pouch-stage"><div class="pouch" style="--c:#c8a26a" role="img" aria-label="Oat &amp; Cinnamon batter pouch"><span class="p-brand">WaffleClub</span><span class="p-name">Oat &amp; Cinnamon</span><span class="p-qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div></div>
+      <h3>Oat &amp; Cinnamon</h3>
+      <div class="chips"><span class="chip vegan">vegan</span><span class="chip gluten-free">gluten-free</span></div>
+    </article>
+    <article class="media-card" data-tags="savoury">
+      <div class="media"><div class="pouch-stage"><div class="pouch" style="--c:#3e7d5a" role="img" aria-label="Cheddar &amp; Herb batter pouch"><span class="p-brand">WaffleClub</span><span class="p-name">Cheddar &amp; Herb</span><span class="p-qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div></div>
+      <h3>Cheddar &amp; Herb</h3>
+      <div class="chips"><span class="chip savoury">savoury</span></div>
+    </article>
+    <article class="media-card" data-tags="seasonal">
+      <div class="media"><div class="pouch-stage"><div class="pouch" style="--c:#8d4b2a" role="img" aria-label="Gingerbread batter pouch"><span class="p-brand">WaffleClub</span><span class="p-name">Gingerbread</span><span class="p-qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div></div>
+      <h3>Gingerbread</h3>
+      <div class="chips"><span class="chip seasonal">seasonal</span></div>
+    </article>
+  </div>
+  <p class="empty-note" id="noFlavours" hidden>No flavours match this filter.</p>
+
+  <div class="row-wrap" style="margin-top:40px">
+    <a class="btn btn-dark" href="../shop/">Pick flavours for my box&nbsp;&nbsp;→</a>
+    <a class="text-link" href="../gifts/">Give it as a gift</a>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

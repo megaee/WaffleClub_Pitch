@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order confirmation · WaffleClub</title>
+<meta name="description" content="Your WaffleClub order confirmation.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="confirmation" data-root="../">
+<div id="site-header"></div>
+
+<main id="main" class="wrap page">
+  <p class="flow no-print" aria-label="Order steps"><span class="done">Cart ✓</span> → <span class="done">Checkout ✓</span> → <span class="on">Order confirmation</span> → <span>My account</span></p>
+  <div id="confView">
+    <section class="confirm-hero" aria-labelledby="cTitle">
+      <div class="big-check" aria-hidden="true">✓</div>
+      <h1 id="cTitle">Thank you! Order confirmed.</h1>
+      <p class="lead" style="text-align:center">Order <strong id="confId"></strong>. A confirmation goes to <span id="confEmail"></span>.</p>
+    </section>
+    <div class="split">
+      <div class="stack" style="gap:22px">
+        <div class="card">
+          <h2 style="font-size:1.6rem">What happens next</h2>
+          <ul id="confNext" class="stack" style="gap:8px;margin:0;padding-left:20px;color:var(--ink-2)"></ul>
+        </div>
+        <div class="grid grid-2">
+          <div class="card white"><p class="eyebrow muted">Delivery to</p><p id="confAddr"></p></div>
+          <div class="card white"><p class="eyebrow muted">Payment</p><p id="confPay"></p><p class="small muted">Prototype: nothing was charged.</p></div>
+        </div>
+        <div class="row-wrap no-print">
+          <a class="btn btn-dark" href="../account/" id="confAccount">Go to My WaffleClub&nbsp;&nbsp;→</a>
+          <a class="btn btn-light" href="../">Back to home</a>
+          <button class="text-link" type="button" id="printBtn">Print receipt</button>
+        </div>
+      </div>
+      <aside class="summary" aria-labelledby="cSum">
+        <h2 id="cSum">Your order</h2>
+        <div id="confLines" class="stack" style="gap:10px"></div>
+        <p class="sum-note" id="confNote"></p>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>

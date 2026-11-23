@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gifts · Give waffles, not socks · WaffleClub</title>
+<meta name="description" content="WaffleClub gift boxes for 1, 3 or 6 months: iron and pouches, gift-wrapped, delivered on your date. You pay once.">
+<link rel="icon" type="image/png" href="../assets/icons/waffle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel+Decorative:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="gifts" data-root="../">
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="wrap hero" aria-labelledby="gTitle">
+    <form class="hero-copy" id="giftForm" novalidate>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> / Gifts</nav>
+      <h1 id="gTitle">Give waffles, not socks</h1>
+      <p class="lead">Iron and pouches, gift-wrapped, delivered on your date. You pay once.</p>
+
+      <fieldset class="options has-tag">
+        <legend class="sr-only">Gift length</legend>
+        <label class="opt-card">
+          <input type="radio" name="gift" value="1">
+          <span class="opt-name">1 month</span>
+          <span class="opt-price">€12.99</span>
+          <span class="opt-sub">4 pouches</span>
+        </label>
+        <label class="opt-card">
+          <input type="radio" name="gift" value="3" checked>
+          <span class="tag">Most gifted</span>
+          <span class="opt-name">3 months</span>
+          <span class="opt-price">€29.97</span>
+          <span class="opt-sub">12 pouches</span>
+        </label>
+        <label class="opt-card">
+          <input type="radio" name="gift" value="6">
+          <span class="opt-name">6 months</span>
+          <span class="opt-price">€54.99</span>
+          <span class="opt-sub">24 pouches</span>
+        </label>
+      </fieldset>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="gTo">Recipient's name</label>
+          <input type="text" id="gTo" autocomplete="off" maxlength="40" placeholder="e.g. Anna" required>
+        </div>
+        <div class="field">
+          <label for="gFrom">From (your name)</label>
+          <input type="text" id="gFrom" autocomplete="off" maxlength="40" placeholder="e.g. Tom" required>
+          <span class="hint">The app greets them with “A gift from …”</span>
+        </div>
+        <div class="field">
+          <label for="gFlavour">Flavour</label>
+          <select id="gFlavour">
+            <option value="classic">Classic Buttermilk</option>
+            <option value="berry">Berry Crush (vegan)</option>
+            <option value="strawberry">Strawberry Sunday (gluten-free)</option>
+            <option value="oat">Oat &amp; Cinnamon (vegan, gluten-free)</option>
+            <option value="cheddar">Cheddar &amp; Herb (savoury)</option>
+            <option value="ginger" selected>Gingerbread (seasonal)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="gDate">Delivery date</label>
+          <input type="date" id="gDate" required>
+          <span class="hint">Delivery date of your choice</span>
+        </div>
+        <div class="field span-2" id="msgField" hidden>
+          <label for="gMsg">Personal message <span class="muted small">(printed on the card)</span></label>
+          <textarea id="gMsg" maxlength="240" placeholder="Merry Christmas! Breakfast is on me."></textarea>
+          <span class="counter" id="gMsgCount">0 / 240</span>
+        </div>
+        <label class="checkline span-2"><input type="checkbox" checked disabled> <span>Gift wrap + card <span class="muted small">(always included)</span></span></label>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn btn-dark" type="submit">Add gift to cart&nbsp;&nbsp;→</button>
+        <button class="text-link" type="button" id="addMsgLink" aria-controls="msgField" aria-expanded="false">Add a personal message</button>
+      </div>
+      <ul class="trust">
+        <li>Gift wrap + card</li>
+        <li>Delivery date of your choice</li>
+        <li>No subscription for you</li>
+      </ul>
+      <p class="small muted">After the gift, the recipient can continue with their own plan, with the first month 50% off. <a href="redeem/">See what they see</a>.</p>
+    </form>
+    <figure class="hero-media">
+      <img src="../assets/img/gifts.jpg" alt="Gifts wrapped in brown paper under a Christmas tree" width="883" height="1400">
+    </figure>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>
