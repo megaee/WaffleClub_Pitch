@@ -135,7 +135,7 @@ Each requirement from `WaffleClub_Pitch.pptx` and where it is implemented. The t
 ## Slide 17 · Thank you
 | Content | Where |
 | --- | --- |
-| THANK YOU · Questions? · summary line · "Online shop: claude.ai/artifact/Q8YUzUdt3pEPmFhRo4rHCx · Photos: Pexels" · waffle photo · notes | `/pitch/#s17` ✅ |
+| THANK YOU · Questions? · summary line · "Online shop: claude.ai/artifact/Q8YUzUdt3pEPmFhRo4rHCx" · waffle photo · notes | `/pitch/#s17` ✅ |
 
 ## Kept verbatim from the deck
 - Slide 6 card text "Get reffered by a friend" (spelling as in the deck).

@@ -743,7 +743,7 @@
       $('#formErrors').hidden = true;
       var pay = $('input[name="pay"]:checked').value;
       place.disabled = true;
-      var o = overlay('Connecting to ' + PAYMENTS[pay].name + '… (prototype, nothing is charged)');
+      var o = overlay('Connecting to ' + PAYMENTS[pay].name + '…');
       setTimeout(function () {
         var tt = totals();
         var id = 'WC-' + String(Date.now()).slice(-6);
