@@ -136,7 +136,6 @@
     else cta = '<a class="btn btn-dark btn-sm header-cta" href="' + u('shop/') + '">Start now</a>';
     host.outerHTML =
       '<a class="skip-link" href="#main">Skip to content</a>' +
-      '<div class="proto-bar">University prototype for the E-Commerce course · no real orders, no payment · <a href="' + u('pitch/') + '">See the pitch</a></div>' +
       '<header class="site-header"><div class="wrap bar">' +
         '<a class="logo" href="' + u('') + '" aria-label="WaffleClub home"><img src="' + u('assets/icons/waffle.png') + '" alt="" width="36" height="36">WaffleClub</a>' +
         '<nav class="main-nav" id="mainNav" aria-label="Main">' + links + '</nav>' +
@@ -173,7 +172,6 @@
         '<div class="f-bottom">' +
           '<span><a href="' + u('pitch/') + '">WaffleClub · E-Commerce · Group pitch</a></span>' +
           '<span>Prices incl. 7% VAT · Free delivery in Germany</span>' +
-          '<span>Photos: <a href="https://www.pexels.com" rel="noopener" target="_blank">Pexels</a></span>' +
         '</div>' +
       '</div></footer>';
   }
